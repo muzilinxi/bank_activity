@@ -1,8 +1,7 @@
-var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    autoHeight: true
-});
 var top=document.getElementById("back-top");
+var swiper = new Swiper('.swiper-container', {
+    direction: 'vertical'
+});
 top.onclick=function(){
     swiper.slideTo(0, 1000, false);
 };

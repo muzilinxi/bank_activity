@@ -11,7 +11,7 @@ body{font-family:"microsoft yahei";background:#fff}
 .page03 .title .vlogo,.page04 .pic01 .vlogo,.page05 .pic01 .vlogo,.page07 .pic01 .vlogo{position:absolute;top:15px;left:15px;width:165px;height:33px}
 .page06 .vlogo{width:165px;height:33px;margin:20px 0 0 6px}
 
-.page01{background:#f5f3f4}
+.page01{background:#f5f3f4;z-index:99}
 .page02 .vlogo{width:165px;height:33px;margin:15px 0 0 15px}
 .page01 .company{width:100%}
 .page01 .Intr{width:100%;margin:4% auto 0}
@@ -24,7 +24,7 @@ body{font-family:"microsoft yahei";background:#fff}
 .page06 .page_inner{background:url(../images/page06/bg.jpg) no-repeat;background-size:cover;-webkit-background-size:cover;padding:14px;box-sizing:border-box;-webkit-box-sizing:border-box}
 .page07{background:#f7e8d1}
 .page07 .pic04{margin:3% 0 10%}
-.page07 .top{position:fixed;bottom:5%;right:3%;width:33px;height:33px;background:url(../images/top.png) no-repeat;background-size:cover;-webkit-background-size:cover}
+.page07 .top{z-indx:88;position:fixed;bottom:0;right:0;width:33px;height:33px;background:url(../images/back-top.png) no-repeat;background-size:cover;-webkit-background-size:cover}
 .arrow-box{position:fixed;bottom:45px;left:0;right:0;margin:0 auto;width:50%;z-index:900}
 #array{z-index:999;-webkit-animation:start 1.5s infinite ease-in-out;display:block;margin:15px auto 0 auto;width:20px;height:15px;z-index:999}
 @-webkit-keyframes start{0%,30%{opacity:0;-webkit-transform:translate(0,10px)}
