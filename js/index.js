@@ -1,12 +1,20 @@
-var backTop=document.getElementById("back-top");
-var page=document.getElementsByClassName("page07");
+var oTop = document.getElementById("back-top");
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical'
 });
-top.onclick=function(){
+
+top.onclick = function () {
     swiper.slideTo(0, 1000, false);
 };
-//backTop.scrollTop = document.body.offsetHeight;
+
+var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+oTop.style.left = screenw - oTop.offsetWidth + "px";
+oTop.style.top = screenh - oTop.offsetHeight + "px";
+window.onscroll = function () {
+    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+    oTop.style.top = screenh - oTop.offsetHeight + scrolltop + "px";
+}
 
 var startScroll, touchStart, touchCurrent;
 swiper.slides.on('touchstart', function (e) {
@@ -18,11 +26,11 @@ swiper.slides.on('touchmove', function (e) {
     var touchesDiff = touchCurrent - touchStart;
     var slide = this;
     var onlyScrolling =
-        ( slide.scrollHeight > slide.offsetHeight ) && //allow only when slide is scrollable
+        ( slide.scrollHeight > slide.offsetHeight ) &&
         (
-            ( touchesDiff < 0 && startScroll === 0 ) || //start from top edge to scroll bottom
-            ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) || //start from bottom edge to scroll top
-            ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) ) //start from the middle
+            ( touchesDiff < 0 && startScroll === 0 ) ||
+            ( touchesDiff > 0 && startScroll === ( slide.scrollHeight - slide.offsetHeight ) ) ||
+            ( startScroll > 0 && startScroll < ( slide.scrollHeight - slide.offsetHeight ) )
         );
     if (onlyScrolling) {
         e.stopPropagation();
