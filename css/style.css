@@ -21,9 +21,10 @@ body{font-family:"microsoft yahei";background:#fff}
 .page03{width:100%;background:url(../images/page03/bg.jpg) no-repeat;background-size:cover}
 .page03 .award{margin:-10% 0 0}
 .page04,.page05{background:#fbf1df}
-.page06{background:url(../images/page06/bg.jpg) no-repeat;background-size:cover;-webkit-background-size:cover;padding:8px;box-sizing:border-box;-webkit-box-sizing:border-box}
+.page06 .page_inner{background:url(../images/page06/bg.jpg) no-repeat;background-size:cover;-webkit-background-size:cover;padding:14px;box-sizing:border-box;-webkit-box-sizing:border-box}
 .page07{background:#f7e8d1}
 .page07 .pic04{margin:3% 0 10%}
+.page07 .top{position:fixed;bottom:5%;right:3%;width:33px;height:33px;background:url(../images/top.png) no-repeat;background-size:cover;-webkit-background-size:cover}
 .arrow-box{position:fixed;bottom:45px;left:0;right:0;margin:0 auto;width:50%;z-index:900}
 #array{z-index:999;-webkit-animation:start 1.5s infinite ease-in-out;display:block;margin:15px auto 0 auto;width:20px;height:15px;z-index:999}
 @-webkit-keyframes start{0%,30%{opacity:0;-webkit-transform:translate(0,10px)}

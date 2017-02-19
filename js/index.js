@@ -1,8 +1,11 @@
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
-    autoHeight: true,
-    loop: true
+    autoHeight: true
 });
+var top=document.getElementById("back-top");
+top.onclick=function(){
+    swiper.slideTo(0, 1000, false);
+};
 var startScroll, touchStart, touchCurrent;
 swiper.slides.on('touchstart', function (e) {
     startScroll = this.scrollTop;
