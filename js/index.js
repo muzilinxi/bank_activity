@@ -1,10 +1,13 @@
-var top=document.getElementById("back-top");
+var backTop=document.getElementById("back-top");
+var page=document.getElementsByClassName("page07");
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical'
 });
 top.onclick=function(){
     swiper.slideTo(0, 1000, false);
 };
+//backTop.scrollTop = document.body.offsetHeight;
+
 var startScroll, touchStart, touchCurrent;
 swiper.slides.on('touchstart', function (e) {
     startScroll = this.scrollTop;
