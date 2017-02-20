@@ -1,12 +1,12 @@
-var oTop = document.getElementById("back-top");
+var oTop = document.getElementsByClassName("back-top");
 var swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    onReachEnd: function(swiper){
-    }
+    direction: 'vertical'
 });
-top.onclick = function () {
+
+oTop.onclick=function(){
     swiper.slideTo(0, 1000, false);
-};
+}
+
 var startScroll, touchStart, touchCurrent;
 swiper.slides.on('touchstart', function (e) {
     startScroll = this.scrollTop;
