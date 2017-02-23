@@ -1,0 +1,127 @@
+header,div,nav,article,section,body,h1,h2,h3,ul,li{
+    margin: 0;
+    padding: 0;
+    font-weight:normal;
+}
+
+ul, li {
+    list-style: none;
+    font-size:0
+}
+html{
+    font-size:100px;
+}
+body{
+    font-family: "Microsoft Yahei", "微软雅黑";
+}
+header{
+    position:relative;
+    width:100%;
+    height:.55rem;
+    line-height: .55rem;
+    background:#2a2a2a;
+    font-size:.15rem;
+    color:#fff;
+    text-align:center;
+
+}
+header .arrow{
+    position:absolute;
+    top:.18rem;
+    left:.16rem;
+    width:.18rem;
+    height:.18rem;
+    background:url("../images/arrow_icn.png") no-repeat;
+    background-size:cover;
+    -webkit-background-size:cover;
+}
+.course img{
+    display: block;
+    width:100%;
+}
+.tab{
+    padding:0 .1rem;
+    border-bottom:1px solid #d7d7d7;
+}
+.tab .tab-bar {
+    /*width:40%;
+    height:.2rem;
+    line-height:.2rem;
+    */
+    /*padding:0 27%;*/
+    margin: .25rem 10% .14rem;
+    border: 1px solid #3596e2;
+    background:#fff;
+    border-radius:3px;
+    -webkit-bordr-radius:3px;
+    overflow: hidden;
+
+}
+.tab-bar ul li{
+    float: left;
+    width:50%;
+    line-height: .3rem;
+    /*padding:.03rem 0;*/
+    background:#fff;
+    font-size:.12rem;
+    text-align:center;
+}
+.tab-bar ul li.current{
+    background:#3596e2;
+    color:#fff;
+}
+.tab-item-t{
+    border-top:1px solid #d7d7d7
+}
+.tab-item-info h2{
+    line-height:.35rem;
+    font-size: .16rem;
+    color:#383838;
+}
+.tab-item-info p{
+    font-size:.1rem;
+}
+.tab-item-info p span{
+    display: inline-block;
+    width:16%;
+    line-height:.15rem;
+    margin-right:.08rem;
+    text-align:center;
+    color:#fff;
+    background:#3596e2;
+    border-radius:.03rem;
+    -webkit-border-raidus:.03rem;
+}
+.tab-item-info p em{
+    font-style:normal;
+}
+.tab-item-info p .price{
+    font-size:.15rem;
+    color:#ee4339;
+}
+.tab-item-b{
+    padding:.2rem 0;
+    border-top:1px solid #d7d7d7
+}
+.tab-item-des{
+    margin-bottom:.15rem;
+}
+.tab-item-des h2{
+    color:#383838;
+    font-size:.12rem;
+}
+.tab-item-des p{
+    color:#777;
+    font-size:.09rem;
+}
+.fixbar{
+    position:fixed;
+    bottom:0;
+    height:.45rem;
+    line-height:.45rem;
+    background:#3596e2;
+    color:#fff;
+    font-size:.15rem;
+    text-align:center;
+}
+
